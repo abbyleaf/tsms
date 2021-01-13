@@ -1,5 +1,6 @@
 import json
 
+count = 0
 with open('debug.log', 'r', encoding='UTF8') as logfile:
     for line in logfile:
         line = line.strip()
@@ -12,6 +13,7 @@ with open('debug.log', 'r', encoding='UTF8') as logfile:
             data = json.loads(line)
         except:
             continue
+        count += 1
         if 'message' in data:
             data = data['message']
             try:
@@ -23,3 +25,4 @@ with open('debug.log', 'r', encoding='UTF8') as logfile:
             print(data['from']['first_name'], ':', data['data'])
         else:
             print(data)
+print(count)
