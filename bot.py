@@ -3,7 +3,6 @@ import telegram.bot
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (Updater, CommandHandler, MessageHandler,
                           Filters, ConversationHandler, CallbackQueryHandler)
-from telegram.ext.dispatcher import run_async
 import logging
 from functools import wraps
 import os
@@ -177,7 +176,6 @@ def loader():
             videos.setdefault(number, []).append(reference)
 
 
-@run_async
 def start(update, context):
     contact_keyboard = telegram.KeyboardButton(
         text="REGISTER", request_contact=True)
@@ -186,7 +184,6 @@ def start(update, context):
         login, reply_markup=reply_markup, parse_mode=telegram.ParseMode.MARKDOWN)
 
 
-@run_async
 def contact(update, context):
     user_id = str(update.effective_user.id)
     contact = update.message.contact
@@ -209,13 +206,11 @@ def contact(update, context):
             "Sorry, you are not permitted to enter at this time.", reply_markup=telegram.ReplyKeyboardRemove())
 
 
-@run_async
 @verifieduser
 def helptext(update, context):
     update.message.reply_text(examples, parse_mode=telegram.ParseMode.MARKDOWN)
 
 
-@run_async
 @verifieduser
 def go(update, context):
     message = update.message.text
