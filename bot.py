@@ -57,8 +57,6 @@ logging.basicConfig(filename='debug.log', filemode='a+', format='%(asctime)s - %
                     level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-LINK = range(1)
-
 
 def verifieduser(func):
     @wraps(func)
@@ -161,6 +159,17 @@ def loader():
     with open('./media/videos.txt', 'r', encoding='UTF8') as videos_file:
         print("Loading Videos")
         for line in videos_file:
+            line = line.strip()
+            line = line.split('@')
+            reference = line[1]
+            number = line[0]
+            videos.setdefault(number, []).append(reference)
+
+    global piano
+    piano = {}
+    with open('./media/wilds_piano.txt', 'r', encoding='UTF8') as piano_file:
+        print("Loading Piano")
+        for line in piano_file:
             line = line.strip()
             line = line.split('@')
             reference = line[1]
@@ -288,10 +297,14 @@ def go(update, context):
         data = 'MP3 {}'.format(reply_header)
         keyboard.append([InlineKeyboardButton(
             "MIDI Soundtrack", callback_data=data)])
+    if titles[reply_header] in piano:
+        data = 'PIANO {}'.format(titles[reply_header])
+        keyboard.append([InlineKeyboardButton(
+            "Piano Recording (Wilds)", callback_data=data)])
     if reply_header in videos:
         data = 'VIDEO {}'.format(reply_header)
         keyboard.append([InlineKeyboardButton(
-            "Lyric Video (Choir Recording)", callback_data=data)])
+            "Choir Recording (Lyric Video)", callback_data=data)])
     if '\n\n' in reply:
         data = 'PPT {}'.format(reply_header)
         keyboard.append([InlineKeyboardButton(
@@ -337,6 +350,14 @@ def callbackquery(update, context):
             except:
                 errors = True
             counter += 1
+    elif data.startswith('PIANO'):
+        data = data.replace('PIANO ', '')
+        reference = piano[data]
+        try:
+            context.bot.send_audio(
+                chat_id=query.message.chat_id, audio=reference, caption=data)
+        except:
+            errors = True
     elif data.startswith('VIDEO'):
         data = data.replace('VIDEO ', '')
         context.bot.send_message(chat_id=query.message.chat_id,
