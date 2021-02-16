@@ -283,27 +283,27 @@ def go(update, context):
     if reply_header in chords:
         data = 'CHORDS {}'.format(reply_header)
         keyboard.append([InlineKeyboardButton(
-            "Guitar Chords 🎸", callback_data=data)])
+            "🎸  Guitar Chords", callback_data=data)])
     if reply_header in scores:
         data = 'SCORE {}'.format(reply_header)
         keyboard.append([InlineKeyboardButton(
-            "Piano Score 🎼", callback_data=data)])
+            "🎼  Piano Score", callback_data=data)])
     if reply_header in mp3:
         data = 'MP3 {}'.format(reply_header)
         keyboard.append([InlineKeyboardButton(
-            "MIDI Soundtrack 🔊", callback_data=data)])
+            "🔊  MIDI Soundtrack", callback_data=data)])
     if titles[reply_header] in piano:
         data = 'PIANO {}'.format(titles[reply_header])
         keyboard.append([InlineKeyboardButton(
-            "Piano Recording (Wilds) 🎹", callback_data=data)])
+            "🎹  Piano Recording (Wilds)", callback_data=data)])
     if reply_header in videos:
         data = 'VIDEO {}'.format(reply_header)
         keyboard.append([InlineKeyboardButton(
-            "Choir Recording (Lyric Video) 🎤", callback_data=data)])
+            "🎤  Choir Recording (Lyric Video)", callback_data=data)])
     if '\n\n' in reply:
         data = 'PPT {}'.format(reply_header)
         keyboard.append([InlineKeyboardButton(
-            "Powerpoint (Beta) 💻", callback_data=data)])
+            "💻  Powerpoint (Beta)💻", callback_data=data)])
     reply_markup = InlineKeyboardMarkup(keyboard)
     update.message.reply_text(
         reply, reply_markup=reply_markup, parse_mode=telegram.ParseMode.MARKDOWN, disable_web_page_preview=True)
