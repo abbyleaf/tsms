@@ -173,7 +173,7 @@ def loader():
             line = line.split('@')
             reference = line[1]
             number = line[0]
-            videos.setdefault(number, []).append(reference)
+            piano[number] = reference
 
 
 def start(update, context):
