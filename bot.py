@@ -303,7 +303,7 @@ def go(update, context):
     if '\n\n' in reply:
         data = 'PPT {}'.format(reply_header)
         keyboard.append([InlineKeyboardButton(
-            "💻  Powerpoint (Beta)💻", callback_data=data)])
+            "💻  Powerpoint (Beta)", callback_data=data)])
     reply_markup = InlineKeyboardMarkup(keyboard)
     update.message.reply_text(
         reply, reply_markup=reply_markup, parse_mode=telegram.ParseMode.MARKDOWN, disable_web_page_preview=True)
