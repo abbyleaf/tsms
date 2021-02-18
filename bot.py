@@ -233,22 +233,31 @@ def go(update, context):
         message = alpha.sub('', message)
         results = []
         titleresults = set()
-        titlefound = None
+        titlefound = False
+        titlematches = []
+        hold = None
         for number, title in titles.items():
             title = unidecode(title)
             title = alpha.sub('', title)
             title = title.upper()
             if message == title:
-                titlefound = number
-                reply_header = number
-                reply = songs[number]
+                titlematches.append(number)
+                titlefound = True
                 if number.startswith(defaultbook):
-                    break
+                    hold = number
             similarity = fuzz.partial_ratio(title, message)
             if similarity > 75:
                 results.append((number, -similarity))
                 titleresults.add(number)
-        if not titlefound:
+        if titlefound:
+            if hold:
+                number = hold
+            else:
+                number = titlematches[-1]
+            titlematches.remove(number)
+            reply_header = number
+            reply = songs[number]
+        else:
             for number, lyrics in songs.items():
                 lyrics = unidecode(lyrics)
                 lyrics = alpha.sub('', lyrics)
@@ -260,6 +269,8 @@ def go(update, context):
             if len(results) == 0:
                 update.message.reply_text(
                     "_No matches found_", parse_mode=telegram.ParseMode.MARKDOWN)
+                update.message.reply_text(
+                    examples, parse_mode=telegram.ParseMode.MARKDOWN)
                 return
             search_return = "<u>SONG SEARCH</u> (in order of relevance)\n\n"
             countresult = 0
@@ -307,6 +318,13 @@ def go(update, context):
     reply_markup = InlineKeyboardMarkup(keyboard)
     update.message.reply_text(
         reply, reply_markup=reply_markup, parse_mode=telegram.ParseMode.MARKDOWN, disable_web_page_preview=True)
+    if len(titlematches) > 0:
+        reply = "Also available in:\n"
+        for i in titlematches:
+            reply += "*{}*\n".format(i)
+        reply += "\n_Other books may contain more content such as Guitar Chords, Piano Scores, etc._"
+        update.message.reply_text(
+            reply, parse_mode=telegram.ParseMode.MARKDOWN, disable_web_page_preview=True)
 
 
 def callbackquery(update, context):
