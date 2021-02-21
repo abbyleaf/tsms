@@ -216,15 +216,19 @@ def go(update, context):
     message = update.message.text
     if re.search("[\u4e00-\u9FFF]", message):
         update.message.reply_text(
-            "_Error: Chinese characters not supported. Search using hanyu pinyin instead._", parse_mode=telegram.ParseMode.MARKDOWN)
+            "_Error: Chinese characters not supported. Search using han yu pin yin instead._", parse_mode=telegram.ParseMode.MARKDOWN)
         return
     message = message.strip().upper()
     if message.isnumeric():
         message = int(message)
         message = defaultbook + ' ' + str(message)
+    titlematches = []
     if message in songs:
         reply_header = message
         reply = songs[reply_header]
+        if message.startswith(defaultbook):
+            update.message.reply_text(
+                "_Hint: Get to songs faster by typing the number without '{}' :)_".format(defaultbook), parse_mode=telegram.ParseMode.MARKDOWN)
     else:
         context.bot.send_chat_action(
             chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
@@ -234,7 +238,6 @@ def go(update, context):
         results = []
         titleresults = set()
         titlefound = False
-        titlematches = []
         hold = None
         for number, title in titles.items():
             title = unidecode(title)
@@ -272,21 +275,25 @@ def go(update, context):
                 update.message.reply_text(
                     examples, parse_mode=telegram.ParseMode.MARKDOWN)
                 return
-            search_return = "<u>SONG SEARCH</u> (in order of relevance)\n\n"
+            search_return = "<u>SONG SEARCH</u>\n\n"
             countresult = 0
             for result in results:
                 countresult += 1
-                if countresult > 50:
-                    break
                 number = result[0]
                 search_return += '<b>{}</b> {}\n'.format(
                     number, titles[number])
-            if countresult < 50:
-                search_return += '\n<i>{} results</i>'.format(
-                    str(len(results)))
-            else:
-                search_return += '\n<i>{} results (showing top 50)</i>'.format(
-                    str(len(results)))
+                if countresult == 200:
+                    search_return += '\n<i>{} results (showing top 200)</i>'.format(
+                        str(len(results)))
+                    update.message.reply_text(
+                        search_return, parse_mode=telegram.ParseMode.HTML)
+                    return
+                elif countresult % 100 == 0:
+                    update.message.reply_text(
+                        search_return, parse_mode=telegram.ParseMode.HTML)
+                    search_return = ""
+            search_return += '\n<i>{} results</i>'.format(
+                str(len(results)))
             update.message.reply_text(
                 search_return, parse_mode=telegram.ParseMode.HTML)
             return
