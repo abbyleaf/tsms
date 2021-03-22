@@ -26,6 +26,7 @@ from pptx.enum.text import PP_ALIGN, MSO_ANCHOR, MSO_AUTO_SIZE
 
 # pip install requests
 from requests import get
+import time
 # pip install pyopenssl
 ip = get('https://api.ipify.org').text
 try:
@@ -229,6 +230,7 @@ def go(update, context):
         if message.startswith(defaultbook):
             update.message.reply_text(
                 "_Hint: Get to songs faster by typing the number without '{}' :)_".format(defaultbook), parse_mode=telegram.ParseMode.MARKDOWN)
+            time.sleep(1)
     else:
         context.bot.send_chat_action(
             chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
