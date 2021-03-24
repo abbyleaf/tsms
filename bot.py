@@ -230,7 +230,7 @@ def go(update, context):
         if message.startswith(defaultbook):
             update.message.reply_text(
                 "_Hint: Get to songs faster by typing the number without '{}' :)_".format(defaultbook), parse_mode=telegram.ParseMode.MARKDOWN)
-            time.sleep(1)
+            time.sleep(2)
     else:
         context.bot.send_chat_action(
             chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
@@ -489,8 +489,8 @@ def main():
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", helptext))
     dp.add_handler(MessageHandler(Filters.contact, contact))
-    dp.add_handler(MessageHandler(Filters.text, go))
-    dp.add_handler(CallbackQueryHandler(callbackquery))
+    dp.add_handler(MessageHandler(Filters.text, go, run_async=True))
+    dp.add_handler(CallbackQueryHandler(callbackquery, run_async=True))
 
     loader()
 
