@@ -220,14 +220,16 @@ def go(update, context):
             "_Error: Chinese characters not supported. Search using han yu pin yin instead._", parse_mode=telegram.ParseMode.MARKDOWN)
         return
     message = message.strip().upper()
+    tempflag = True
     if message.isnumeric():
         message = int(message)
         message = defaultbook + ' ' + str(message)
+        tempflag = False
     titlematches = []
     if message in songs:
         reply_header = message
         reply = songs[reply_header]
-        if message.startswith(defaultbook):
+        if message.startswith(defaultbook) and tempflag:
             update.message.reply_text(
                 "_Hint: Get to songs faster by typing the number without '{}' :)_".format(defaultbook), parse_mode=telegram.ParseMode.MARKDOWN)
             time.sleep(2)
