@@ -1,4 +1,3 @@
-# pip install python-telegram-bot
 import telegram.bot
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (Updater, CommandHandler, MessageHandler,
@@ -12,22 +11,14 @@ from templates import login, welcome, examples, defaultbook
 import json
 import requests
 from io import BytesIO
-
-# pip install Unidecode
 from unidecode import unidecode
-
-# pip install fuzzywuzzy[speedup]
 from fuzzywuzzy import fuzz
-
-# pip install python-pptx
 from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR, MSO_AUTO_SIZE
-
-# pip install requests
 from requests import get
 import time
-# pip install pyopenssl
+
 ip = get('https://api.ipify.org').text
 try:
     certfile = open("cert.pem")
