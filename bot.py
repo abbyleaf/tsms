@@ -238,7 +238,7 @@ def go(update, context):
             title = unidecode(title)
             title = alpha.sub('', title)
             title = title.upper()
-            if message == title:
+            if message == title and ' ' in message:
                 titlematches.append(number)
                 titlefound = True
                 if number.startswith(defaultbook):
