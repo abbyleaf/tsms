@@ -310,7 +310,7 @@ def go(update, context):
         keyboard.append([InlineKeyboardButton(
             "🎹  Piano Recording (Wilds)", callback_data=data)])
     if titles[reply_header] in videos:
-        data = 'VIDEO {}'.format(reply_header)
+        data = 'VIDEO {}'.format(titles[reply_header])
         keyboard.append([InlineKeyboardButton(
             "🎤  Choir Recording (Lyric Video)", callback_data=data)])
     if '\n\n' in reply:
