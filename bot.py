@@ -153,7 +153,7 @@ def loader():
             line = line.strip()
             line = line.split('@')
             reference = line[1]
-            number = line[0].upper()
+            number = line[0].upper().strip('0123456789-')
             videos.setdefault(number, []).append(reference)
 
     global piano
