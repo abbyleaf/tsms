@@ -153,7 +153,7 @@ def loader():
             line = line.strip()
             line = line.split('@')
             reference = line[1]
-            number = line[0]
+            number = line[0].upper()
             videos.setdefault(number, []).append(reference)
 
     global piano
@@ -309,7 +309,7 @@ def go(update, context):
         data = 'PIANO {}'.format(titles[reply_header])
         keyboard.append([InlineKeyboardButton(
             "🎹  Piano Recording (Wilds)", callback_data=data)])
-    if reply_header in videos:
+    if titles[reply_header] in videos:
         data = 'VIDEO {}'.format(reply_header)
         keyboard.append([InlineKeyboardButton(
             "🎤  Choir Recording (Lyric Video)", callback_data=data)])
