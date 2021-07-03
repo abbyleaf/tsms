@@ -388,7 +388,7 @@ def callbackquery(update, context):
         data = data.replace('VIDEO ', '')
         context.bot.send_message(chat_id=query.message.chat_id,
                                  text='_Connecting to Life RTL..._', parse_mode=telegram.ParseMode.MARKDOWN)
-        if users[str(query.message.chat_id)]['rtl'] == True:
+        if users[str(query.message.chat_id)]['rtl'] == True or True:  # ALLOW ALL
             if data in videos:
                 try:
                     count = len(videos[data])
@@ -399,6 +399,8 @@ def callbackquery(update, context):
                         url = rtlurl + video
                         videofile = requests.get(
                             url, headers=rtlheaders, timeout=10).content
+                        context.bot.send_message(chat_id=query.message.chat_id,
+                                                 text='*Church Use Only*\n\nThe following video is property of Life B-P Church. Please do not distribute.', parse_mode=telegram.ParseMode.MARKDOWN)
                         context.bot.send_video(
                             chat_id=query.message.chat_id, video=BytesIO(videofile))
                 except:
