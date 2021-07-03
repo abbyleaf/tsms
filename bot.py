@@ -6,7 +6,7 @@ import logging
 from functools import wraps
 import os
 import re
-from cred import bottoken, port, rtlurl, rtlheaders
+from cred import bottoken, port, rtlurl, rtlheaders, cbpcurl
 from templates import login, welcome, examples, defaultbook
 import json
 import requests
@@ -155,6 +155,17 @@ def loader():
             reference = line[1]
             number = line[0].upper().strip('0123456789-')
             videos.setdefault(number, []).append(reference)
+
+    global cbpc
+    cbpc = {}
+    with open('./media/cbpc.txt', 'r', encoding='UTF8') as cbpc_file:
+        print("Loading CBPC")
+        for line in cbpc_file:
+            line = line.strip()
+            line = line.split('@')
+            reference = line[1]
+            number = line[0]
+            cbpc[number] = reference
 
     global piano
     piano = {}
@@ -309,7 +320,7 @@ def go(update, context):
         data = 'PIANO {}'.format(titles[reply_header])
         keyboard.append([InlineKeyboardButton(
             "🎹  Piano Recording (Wilds)", callback_data=data)])
-    if titles[reply_header] in videos:
+    if (titles[reply_header] in videos) or (titles[reply_header] in cbpc):
         data = 'VIDEO {}'.format(titles[reply_header])
         keyboard.append([InlineKeyboardButton(
             "🎤  Choir Recording (Lyric Video)", callback_data=data)])
@@ -378,19 +389,27 @@ def callbackquery(update, context):
         context.bot.send_message(chat_id=query.message.chat_id,
                                  text='_Connecting to Life RTL..._', parse_mode=telegram.ParseMode.MARKDOWN)
         if users[str(query.message.chat_id)]['rtl'] == True:
-            try:
-                count = len(videos[data])
-                if count > 1:
-                    context.bot.send_message(
-                        chat_id=query.message.chat_id, text='_{} versions found. Sending..._'.format(str(count)), parse_mode=telegram.ParseMode.MARKDOWN)
-                for video in videos[data]:
-                    url = rtlurl + video
-                    videofile = requests.get(
-                        url, headers=rtlheaders, timeout=10).content
-                    context.bot.send_video(
-                        chat_id=query.message.chat_id, video=BytesIO(videofile))
-            except:
-                errors = True
+            if data in videos:
+                try:
+                    count = len(videos[data])
+                    if count > 1:
+                        context.bot.send_message(
+                            chat_id=query.message.chat_id, text='_{} versions found. Sending..._'.format(str(count)), parse_mode=telegram.ParseMode.MARKDOWN)
+                    for video in videos[data]:
+                        url = rtlurl + video
+                        videofile = requests.get(
+                            url, headers=rtlheaders, timeout=10).content
+                        context.bot.send_video(
+                            chat_id=query.message.chat_id, video=BytesIO(videofile))
+                except:
+                    errors = True
+            if data in cbpc:
+                url = cbpcurl + cbpc[data]
+                cbpcfile = requests.get(url, timeout=10).content
+                context.bot.send_message(chat_id=query.message.chat_id,
+                                         text='*Personal / Fellowship Group Use Only*\n\nThe following video is provided with permission from Calvary B-P Church. Please do not distribute.', parse_mode=telegram.ParseMode.MARKDOWN)
+                context.bot.send_video(
+                    chat_id=query.message.chat_id, video=BytesIO(cbpcfile))
         else:
             context.bot.send_message(
                 chat_id=query.message.chat_id, text='_You are not authorised to use this feature._', parse_mode=telegram.ParseMode.MARKDOWN)
