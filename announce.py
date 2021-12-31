@@ -15,7 +15,11 @@ bot = telegram.Bot(token=bottoken)
 
 
 message = '''
-<b>Bot Announcement</b>
+Dear TSMS Bot user,
+
+Blessed New Year! Join us this year as we bring you daily devotions every morning from the book of Romans, <b>by subscribing to the Daily Manna telegram channel at t.me/edailymanna</b>
+
+<i>This message is brought to you by the B-P Youth e-ministry - bpilgrims.com</i>
 '''
 
 specialmessage = '''
@@ -27,7 +31,7 @@ def main():
     for user in users:
         try:
             bot.send_message(chat_id=user, text=message,
-                             parse_mode=telegram.ParseMode.HTML, disable_notification=True)
+                             parse_mode=telegram.ParseMode.HTML)
         except:
             print(user)
         time.sleep(0.1)
