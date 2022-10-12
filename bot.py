@@ -194,7 +194,7 @@ def contact(update, context):
     if user_id != str(contact.user_id):
         update.message.reply_text(
             "Verification failed. Your ID does not match.", reply_markup=telegram.ReplyKeyboardRemove())
-    elif phone.startswith('+65') or phone.startswith('65') or phone.startswith('+61') or phone.startswith('61'):
+    elif phone.startswith('+65') or phone.startswith('65') or phone.startswith('+61') or phone.startswith('61') or phone.startswith('+60') or phone.startswith('60'):
         first_name = contact.first_name
         last_name = contact.last_name
         full_name = (str(first_name or '') + ' ' +
