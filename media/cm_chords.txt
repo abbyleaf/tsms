@@ -13,17 +13,17 @@
 `
 E	  B7
 A B C D E F G
-		        E
+                E
 Jesus died for you and me
-	   B7
+       B7
 H I J K L M N
 
 Jesus died for sinful men (A-MEN)
 E	   B7
 O P Q R S T Q
-		         E
+                 E
 I believe God’s word is true
-	   A
+       A
 V & W God has promised you
 B7			        E
 X Y Z, a home eternally
@@ -32,11 +32,11 @@ X Y Z, a home eternally
 `
 C	    F	         		C 
 Alive, alive, alive forevermore
-	G 		        C
+    G 		        C
 My Jesus is alive, alive forevermore
 C	    F	         		C 
 Alive, alive, alive forevermore
-	G	    C
+    G	    C
 My Jesus is alive
 `
 4 Away in the Manger
@@ -45,9 +45,9 @@ E	  		            A		E
 Away in the manger no crib for a bed
     B7					                E
 the little Lord Jesus lay down His sweet head
-	E			                    A		E
+    E			                    A		E
 The stars in the bright sky look down where He lay
-	    B7	  E	        B7		  E
+        B7	  E	        B7		  E
 The little Lord Jesus asleep on the hay
 `
 5 Baa Baa Black Sheep
@@ -109,11 +109,11 @@ Dare to make it known!
 `
 C		        F
 Deep and wide, deep and wide
-	       C		F	    C	     G
+           C		F	    C	     G
 There’s a fountain flowing deep and wide
 C		        F
 Deep and wide, deep and wide
-	       C		G		        C
+           C		G		        C
 There’s a fountain flowing deep and wide
 [2nd stanza: Wide and Deep]
 `
@@ -136,7 +136,7 @@ A
 Many sons has Father Abraham
 
 I am one of them and so are you
-			          D
+                      D
 So let us praise the Lord
 A	   D
 Right arm
@@ -153,15 +153,283 @@ Right arm, left arm, right foot, left foot, chin up, turn around
 `
 C		           C7		     F
 Give me oil in my lamp keep me burning, burning, burning
-	    C		          G7
+        C		          G7
 Give me oil in my lamp I pray, I pray
 C		           C7		     F
 Give me oil in my lamp keep me burning, burning, burning
-	       C		      G7	   C
+           C		      G7	   C
 Keep me burning till the break of day
-		     F		            G7			     C   F   C
+             F		            G7			     C   F   C
 Sing hosanna, sing hosanna, sing hosanna to the king of kings
-		     F		            G7			     C   F   C
+             F		            G7			     C   F   C
 Sing hosanna, sing hosanna, sing hosanna to the king of kings
 `
+13 God Gave Us a Special Book
+`
+G			
+God gave us a special book
+    D	           G
+The bible is its name
+  C
+B-I-B-L-E 
+D   G
+B-I-B-L-E
+C   D7
+B-I-B-L-E
+                  G
+The bible is its name
+`
+14 God is so Good
+`
+E	       B7
+God is so good
+B7	       E
+God is so good
+E	       A
+God is so good
+        E	B7  E
+He’s so good to me
+
+He cares for me
+He cares for me
+He cares for me
+He’s so good to me
+
+He loves me so
+He loves me so
+He loves me so
+He’s so good to me
+`
+15 God Made Me
+`
+D		      G
+God made me, God made me
+D		          A		  D
+I’m so glad that God made me
+D				           G
+God made my fingers and God made my toes
+A				           D
+God made my knuckles and God made my nose
+D				           G
+God made my hipbones and God made my chin
+A				          A7     D
+And God made the shape that I am in
+D		      G
+God made me, God made me
+D		          A		  D
+I’m so glad that God made me
+`
+16 God Made the Mountains
+`
+C					               G
+God made the mountains high and God made the trees
+G					               C
+God made the fish that swim and God made the seas
+C					               G
+God made the birds that fly and God made the bees
+    G			         G			           C   G   C
+But the best of it all, the thrill of it all, God made me
+`
+17 Gospel Train
+`
+E      B7    E			      A	         E
+Oh... I’m travelling on the hallelujah line
+        E		         B7
+on the good old gospel train (choo choo)
+     E		             A		         E
+I am on the right track never will turn back
+        E	       B7     E
+to the station of sin again
+   E
+I need no fare I’m travelling on a pass
+                            B7
+tis the blood for sinners slain
+B7     B7   E			      A	         E 
+Oh... I’m travelling on the hallelujah line
+        E	      B7    E
+on the good old gospel train (choo choo)
+`
+18 Hallelujah
+`
+E                      A
+Hallelu, hallelu, hallelu, hallelujah
+E      B7      E
+Praise ye the Lord!
+                       A
+Hallelu, hallelu, hallelu, hallelujah
+E      B7      E
+Praise ye the Lord!
+               B7
+Praise ye the Lord! Hallelujah!
+               E
+Praise ye the Lord! Hallelujah!
+               A
+Praise ye the Lord! Hallelujah!
+B7             E
+Praise ye the Lord!
+`
+19 Heaven, is a Happy Place
+`
+E                         B7           E
+Heaven is a happy place, happy place, happy place
+
+Heaven is a happy place
+B7    E
+Hallelujah
+
+Heaven’s streets are paved with gold, paved with gold, paved with gold
+Heaven’s streets are paved with gold
+Hallelujah
+
+Jesus is the only way, only way, only way
+Jesus is the only way
+To that city
+
+Oh, how happy we will be, we will be, we will be
+Oh, how happy we will be
+Come go with me
+`
+20 Heaven is a wonderful place
+`
+E
+Heaven is a *wonderful place
+                       B7
+Filled with glory and grace
+E                 A
+I want to see my Savior’s face
+E          B7          E
+Heaven is a *wonderful place
+
+*peaceful/ beautiful/ glorious
+`
+21 He’s able
+`
+E             B7         E          A
+He’s able, he’s able, I know he’s able
+  E                B7                E
+I know my Lord is able to carry me through (x2)
+    A                            E
+He heals the broken hearted and set the captives free
+    F#                              B7
+He made the lame to walk again and caused the blind to see
+      E          B7      E         A
+He’s able, he’s able, I know he’s able
+   E               B7                E
+I know my Lord is able to carry me through
+`
+22 He’s Got the Whole World in His Hands
+`
+C
+He’s got the whole world in His hands
+              G
+He’s got the whole world in His hands
+              C
+He’s got the whole world in His hands
+              G                   C
+He’s got the whole world in His hands
+`
+23 He’s the Lord of the Sunshine
+`
+E
+He’s the Lord of the sunshine the Lord of the rain
+                     C#m             F#          B7
+He’s the Lord of the good times the Lord of the pain
+E
+He’s the Lord of the mountain the Lord of the sea
+E                     A         E           A
+He’s the Lord of the music the Lord of the children
+          E      B7      E
+He’s the Lord of you and me
+`
+24 His Sheep Am I
+`
+	   C				               G                      
+In God’s green pastures feeding by His cool waters lie;
+				            C     F  C
+Soft in the evening walk my Lord and I.
+       C	       			        F		      Fm
+All the sheep of His pastures fare so wondrously fine,
+C    F    G	 C
+His sheep am I.
+
+   	    F
+Waters cool (in the valley),
+	      C
+Pastures green (on the mountain)
+	   Dm G7			   C    F  C
+In the eve - ning walk my Lord and I
+          F
+Dark the night (in the valley),
+	      C
+Rough the way (on the mountain),
+        F  G7 		      C
+Step by Step, my Lord and I.
+`
+25 Hosanna
+`
+D
+Ho-ho-ho-hosanna
+G		      A7
+Ha-ha-hal-le-lujah
+D
+He-he-he-he saved me
+G	          A7	     D
+I’ve got the joy of the Lord
+`
+26 How did Moses Cross the Red Sea
+`
+A                      
+How did Moses cross the Red Sea?
+D			             A
+How did Moses cross the Red Sea?
+      		   C#	     F#m
+How did Moses cross the Red Sea?
+   Bm       E   A
+How did he get across?
+
+   	    A
+Did he swim? No, no!
+
+Did he sail? No, no!
+      		     	  E
+Did he fly? No, no, no, no!
+     	A
+Did he jump? No, no! 
+(Cont…)
+
+Did he run? No, no!
+        B		 E
+How did he get across?
+
+    A		      		     D
+God blew with His wind, puff, puff, puff, puff.
+    B                     	 E
+He blew just enough, nuf, nuf, nuf, nuf.
+	A		             D		E
+And through the sea God made a path.
+      	A	  E      A
+That’s how he got a cross.
+`
+27 How Great is Our God
+`
+ E                B7
+How Great is Our God,
+		          E
+How Great is His name
+      		      B7
+He’s the greatest of all
+      		      E
+And He’s always the same
+
+  E                 E
+He rolled back the waters
+		          A
+of the mighty Red Sea
+      		   E
+And He says, “I’ll lead you,
+   B7		  E
+If you follow me.”
+`
+
+
 
