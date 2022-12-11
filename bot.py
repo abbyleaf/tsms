@@ -514,27 +514,26 @@ def makeppt(data):
 
 
 def main():
-    # updater = Updater(token=bottoken, workers=32, use_context=True)
-    # dp = updater.dispatcher
+    updater = Updater(token=bottoken, workers=32, use_context=True)
+    dp = updater.dispatcher
 
-    # dp.add_handler(CommandHandler("start", start))
-    # dp.add_handler(CommandHandler("help", helptext))
-    # dp.add_handler(MessageHandler(Filters.contact, contact))
-    # dp.add_handler(MessageHandler(Filters.text, go, run_async=True))
-    # dp.add_handler(CallbackQueryHandler(callbackquery, run_async=True))
+    dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("help", helptext))
+    dp.add_handler(MessageHandler(Filters.contact, contact))
+    dp.add_handler(MessageHandler(Filters.text, go, run_async=True))
+    dp.add_handler(CallbackQueryHandler(callbackquery, run_async=True))
 
     loader()
-    breakpoint()
-    # updater.start_polling()
-    # updater.start_webhook(listen='0.0.0.0',
-    #                       port=port,
-    #                       url_path=bottoken,
-    #                       key='private.key',
-    #                       cert='cert.pem',
-    #                       webhook_url='https://{}:{}/{}'.format(ip, port, bottoken))
+    updater.start_polling()
+    updater.start_webhook(listen='0.0.0.0',
+                          port=port,
+                          url_path=bottoken,
+                          key='private.key',
+                          cert='cert.pem',
+                          webhook_url='https://{}:{}/{}'.format(ip, port, bottoken))
 
     print("Bot is running. Press Ctrl+C to stop.")
-    # updater.idle()
+    updater.idle()
     print("Bot stopped.")
 
 
