@@ -6,7 +6,7 @@ import logging
 from functools import wraps
 import os
 import re
-# from cred import bottoken, port, rtlurl, rtlheaders, cbpcurl
+from cred import bottoken, port, rtlurl, rtlheaders, cbpcurl
 from templates import login, welcome, examples, defaultbook
 import json
 import requests
@@ -524,7 +524,8 @@ def main():
     dp.add_handler(CallbackQueryHandler(callbackquery, run_async=True))
 
     loader()
-    updater.start_polling()
+    
+    # updater.start_polling()
     updater.start_webhook(listen='0.0.0.0',
                           port=port,
                           url_path=bottoken,
