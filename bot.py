@@ -524,6 +524,7 @@ def main():
     dp.add_handler(CallbackQueryHandler(callbackquery, run_async=True))
 
     loader()
+    
     # updater.start_polling()
     updater.start_webhook(listen='0.0.0.0',
                           port=port,
