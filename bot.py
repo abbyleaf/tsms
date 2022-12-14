@@ -118,6 +118,23 @@ def loader():
                 song_lyrics += line
         song_lyrics = song_lyrics.strip()
         chords[song_number] = song_lyrics
+    with open('./media/cm_chords.txt', 'r', encoding='UTF8') as cm_chords_file:
+        print("Loading CM Chords")
+        song_number = None
+        song_lyrics = ''
+        for line in cm_chords_file:
+            if number.search(line):
+                if song_number != None:
+                    song_lyrics = song_lyrics.strip()
+                    chords[song_number] = song_lyrics
+                    song_lyrics = ''
+                song_lyrics += 'CM ' + line
+                line = line.split()
+                song_number = 'CM ' + str(line.pop(0))
+            else:
+                song_lyrics += line
+        song_lyrics = song_lyrics.strip()
+        chords[song_number] = song_lyrics
 
     global scores
     scores = {}
@@ -507,7 +524,7 @@ def main():
     dp.add_handler(CallbackQueryHandler(callbackquery, run_async=True))
 
     loader()
-
+    
     # updater.start_polling()
     updater.start_webhook(listen='0.0.0.0',
                           port=port,
