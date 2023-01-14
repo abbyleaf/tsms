@@ -30,11 +30,11 @@ X Y Z, a home eternally
 `
 3 Alive
 `
-C	    F	         		C 
+C	    F	         		C
 Alive, alive, alive forevermore
     G 		        C
 My Jesus is alive, alive forevermore
-C	    F	         		C 
+C	    F	         		C
 Alive, alive, alive forevermore
     G	    C
 My Jesus is alive
@@ -166,12 +166,12 @@ Sing hosanna, sing hosanna, sing hosanna to the king of kings
 `
 13 God Gave Us a Special Book
 `
-G			
+G
 God gave us a special book
     D	           G
 The bible is its name
   C
-B-I-B-L-E 
+B-I-B-L-E
 D   G
 B-I-B-L-E
 C   D7
@@ -244,7 +244,7 @@ to the station of sin again
 I need no fare I’m travelling on a pass
                             B7
 tis the blood for sinners slain
-B7     B7   E			      A	         E 
+B7     B7   E			      A	         E
 Oh... I’m travelling on the hallelujah line
         E	      B7    E
 on the good old gospel train (choo choo)
@@ -343,7 +343,7 @@ He’s the Lord of you and me
 `
 24 His Sheep Am I
 `
-	   C				               G                      
+	   C				               G
 In God’s green pastures feeding by His cool waters lie;
 				            C     F  C
 Soft in the evening walk my Lord and I.
@@ -378,7 +378,7 @@ I’ve got the joy of the Lord
 `
 26 How did Moses Cross the Red Sea
 `
-A                      
+A
 How did Moses cross the Red Sea?
 D			             A
 How did Moses cross the Red Sea?
@@ -394,7 +394,7 @@ Did he sail? No, no!
       		     	  E
 Did he fly? No, no, no, no!
      	A
-Did he jump? No, no! 
+Did he jump? No, no!
 (Cont…)
 
 Did he run? No, no!
@@ -453,7 +453,7 @@ No turning back, no turning back
 30 I just keep on trusting my Lord
 `
     		  D                  	A7
-I just keep trusting my Lord, as I walk along, 
+I just keep trusting my Lord, as I walk along,
 						                      D
 I just keep trusting my Lord, and He gives a song;
       					           D7
@@ -494,7 +494,7 @@ C                                  D                      G7
 If I were a robin in the tree I’d thank you Lord that I can sing
 C            C7                  F
 If I were a fish in the sea I’d wiggle my tail and I’ll giggle with glee
-   G7                                     C  F  C 
+   G7                                     C  F  C
 But I just thank you Father for making me me me me
          C                       C7
 For you gave me a heart and you gave me a smile
@@ -531,7 +531,7 @@ Sometimes cooking hokkien mee
 C                   G      G                 C
 I’ll do it all for Jesus, I’ll do it all for Jesus
 C                   F           C       G       C
-I’ll do it all for Jesus, He’s done so much for me 
+I’ll do it all for Jesus, He’s done so much for me
 `
 35 Isn’t He Wonderful
 `
@@ -649,49 +649,65 @@ E
 When Mr Satan knocks at my heart’s door and
 A          B7      E
 Says, “May I come in?”
-E 
-I say, “No! No!” for Jesus loves me so 
+E
+I say, “No! No!” for Jesus loves me so
         A     B7      E
 and He took away my sins
         A                     E
-Then he turns around and he runs away 
+Then he turns around and he runs away
    F#            B7
 I wish he’ll go away to stay
      E
-When Mr Satan knocks at my heart’s door 
+When Mr Satan knocks at my heart’s door
     A        B7      E
 I just say “No! No! No!”
 `
 44 My God is so Big
 `
-    E                               C#m
-My God is so big, so strong and so mighty
-         B7                   E    A   E
-There’s nothing my God cannot do (for you) [x2]
+    E
+My God is so big,
+                 C#m
+so strong and so mighty
+         B7
+There’s nothing my God
+E    A   E
+cannot do (for you) [x2]
 E
-He made the stars, He made the seas, 
+He made the stars, He made the seas,
                        B7
 He made the elephants too
-    E                               C#m
-My God is so big, so strong and so mighty
-         B7                   E    A    E
-There’s nothing my God cannot do (for you!)
+    E
+My God is so big,
+                 C#m
+so strong and so mighty
+         B7
+There’s nothing my God
+       E    A    E
+cannot do (for you!)
 `
 45 My Heart Was Dark with Sin
 `
-    C         F         C    G                    C
-My heart was dark with sin until the Saviour came in
-    C         F       C        G                  C
-His precious blood I know has washed me white as snow
-    G                  C         G                    C
-And in God’s word I’m told I’ll walk the streets of gold
-    C       F           C       G                  C
-To grow in Christ each day, I read the bible and pray.
+    C         F         C
+My heart was dark with sin
+  G                    C
+until the Saviour came in
+    C         F       C
+His precious blood I know
+    G                  C
+has washed me white as snow
+    G                  C
+And in God’s word I’m told
+      G                    C
+I’ll walk the streets of gold
+    C       F           C
+To grow in Christ each day,
+   G                  C
+I read the bible and pray.
 `
 46 Obedience
 `
   D
-Obedience is the very best way 
+Obedience is the very best way
                      A
 To show that you believe
 
@@ -703,7 +719,7 @@ Action is the key, do it immediately
                  G
 Joy you will receive
 G                 D
-Obedience is the very best way 
+Obedience is the very best way
     G         A      D
 To show that you believe
 D              G
@@ -778,7 +794,7 @@ Praise Him, praise Him all ye little children
 C       F     G      C
 God is love, God is love
 `
-52 Pray for Help to Do What is Right! 
+52 Pray for Help to Do What is Right!
 `
 (Tune: The Wise Man & The Foolish Man)
 E                B7
@@ -911,11 +927,11 @@ Always, always, I’ll walk with Him always
 `
 61 The Wise Man & The Foolish Man
 `
-     E                  B7 
+     E                  B7
 The wise man built his house upon the rock
      B7                 E
 The wise man built his house upon the rock
-     E                  B7 
+     E                  B7
 The wise man built his house upon the rock
          B7                 E
 And the rain came tumbling down
@@ -1005,11 +1021,11 @@ E
 Walking all the way
 E             A       B7                 E
 Walking with Jesus, walking with Jesus alone
-E                          A        
+E                          A
 Walking in the sunlight, walking in the shadow
 B7                 E
 Walking everyday, walking all the way
-E                         A        
+E                         A
 Walking in the sunlight, walking in the shadow
 B7                   E
 Walking with Jesus alone
@@ -1051,27 +1067,27 @@ And God can make me glad
 `
   D                      A
 Whisper a prayer in the morning,
-                     D 
+                     D
 Whisper a prayer at noon,
-  G                      D 
+  G                      D
 Whisper a prayer in the evening,
-  A                    D 
+  A                    D
 To keep your heart in tune.
 
-God answers prayer in the morning, 
+God answers prayer in the morning,
 God answers prayer at noon,
-God answers prayer in the evening, 
+God answers prayer in the evening,
 Just Keep Your heart in tune
 `
 71 Who Has Made the...?
 `
 C
-Who has made the *flowers that bloom 
-    G                          C 
-flowers that bloom, flowers that bloom 
+Who has made the *flowers that bloom
+    G                          C
+flowers that bloom, flowers that bloom
 C
-Who has made the flowers that bloom 
-F       G      C 
+Who has made the flowers that bloom
+F       G      C
 God in heaven above
 
 *fish that swim/birds that fly
@@ -1083,34 +1099,191 @@ Wide, wide as the ocean
                      F
 High as the heavens above
 G                  C
-Deep, deep as the deepest sea 
-   G   D         G 
-Is my Saviour’s love 
+Deep, deep as the deepest sea
+   G   D         G
+Is my Saviour’s love
 C  F         C
-I though so unworthy 
-            C7           F 
-Still am a child of His care 
+I though so unworthy
+            C7           F
+Still am a child of His care
 
 For His word teaches me
-C              Am        Dm-G   C
-that His love reaches me every where
+C              Am
+that His love reaches me
+Dm-G   C
+every where
 `
 73 With Christ in the Vessel
 `
-      E                           A
-With Christ in the vessel we can smile at the storm 
-B7                   E
-Smile at the storm, smile at the storm
-      E                           A
-With Christ in the vessel we can smile at the storm 
-   E      B7      E 
-As we go sailing home 
-E         B7
-Sailing, sailing home 
-B7        E
-Sailing, sailing home 
-      E                           A 
-With Christ in the vessel we can smile at the storm 
+      E
+With Christ in the vessel
+         A
+we can smile at the storm
+B7
+Smile at the storm,
+E
+smile at the storm
+      E
+With Christ in the vessel
+       A
+we can smile at the storm
    E      B7      E
-As we go sailing home 
+As we go sailing home
+E         B7
+Sailing, sailing home
+B7        E
+Sailing, sailing home
+      E
+With Christ in the vessel
+       A
+we can smile at the storm
+   E      B7      E
+As we go sailing home
+`
+74 A Gift to You (4/4)
+`
+G7           Am
+Everything I am
+ G            F
+(Everything I am)
+G7              C
+Everything I'll be
+ G               C
+(Everything I'll be)
+G7               Am
+I give it to you Lord
+ G                F
+(I give it to you Lord)
+    G             C
+And do it thankfully
+ G7      C
+(thankfully)
+      G      C
+Every song I sing
+      E        Am
+Every praise I bring
+     F       Dm
+Everything I do
+     G       C
+Is a gift to You.
+
+Everything I have (Everything I have)
+All you've given me (All you've given me)
+I give it to you Lord (I give it to you Lord)
+And do it thankfully (thankfully)
+
+Every song I sing
+Every praise I bring
+Everything I do
+Is a gift to You.
+`
+75 God's Power (4/4)
+`
+C         F           G
+My God is bigger than I am,
+Em           Am
+Strongest of all,
+      Dm      G
+He is able to make the summer
+C
+turn into fall
+   F                 G
+He controls all that happens,
+    Em                Am
+His power is plain to see,
+      Dm         G
+And I know I can trust Him,
+             C
+For with His power
+   G         C
+He cares for me
+`
+76 Great Big Wonderful God (4/4)
+`
+          A
+We have a great, big,
+A
+wonderful God
+                 D
+We have a great, big,
+          A
+wonderful God
+          D
+A God who loves everyone of us,
+A
+Does so much for all of us,
+              E         A
+A great, big, wonderful God!
+        D
+He will never, never, never,
+A
+leave us,
+     E               A
+He's always standing by
+B7
+He picks us up when we stumble,
+                       E
+We're the apple of His eye.
+
+We have a great, big, wonderful God
+We have a great, big, wonderful God
+A God who loves everyone of us,
+Does so much for all of us,
+A great, big, wonderful God!
+`
+77 Peace like a River (4/4)
+`
+         G
+I’ve got peace like a river
+         C            G
+I’ve got peace like a river
+
+I’ve got peace like a river
+      D
+in my soul
+         G            G7
+I’ve got peace like a river
+         C            G
+I’ve got peace like a river
+
+I’ve got peace like a river
+D     G
+in my soul
+`
+78 The Lord's Prayer (4/4)
+`
+    C             Am
+Our Father in heaven,
+   Dm            C
+hallowed be Your name.
+     Am      Dm
+Your kingdom come,
+     G       Am
+Your will be done,
+   Dm                F  C
+on earth as it is in heaven.
+     F       G
+Give us this day our
+C     Am
+daily bread.
+    F       G      Am
+And forgive us our debts,
+    F     G        Am
+as we forgive our debtors.
+  F
+And do not lead us
+    G    C
+into temptation,
+    F            C
+but deliver us from the evil one
+    F            C
+for Yours is the kingdom
+  F
+and the power
+  F           G
+and the glory forever.
+    C         Am
+Our Father in heaven,
+   Dm    F       C
+hallowed be Your name.
 `
