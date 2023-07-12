@@ -29,7 +29,8 @@ AVAILABLE BOOKS
 *Revival Hymns & Choruses* (RHC 1-567)
 *Hymns of Grace* (HOG 1-444)
 *The Wilds Songbook (9th ed.)* (WILDS 1-209)
-*Children's Ministry Guitar Chords* (CM 1-73)
+*Children's Ministry* (CM 1-73)
+*Word in Song (2023)* (WIS 1-196)
 '''
 
 defaultbook = 'TSMS'
