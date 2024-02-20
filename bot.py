@@ -9,7 +9,6 @@ from telegram.ext import (
 )
 import logging
 from functools import wraps
-import os
 import re
 from cred import bottoken, port
 from templates import login, welcome, examples, defaultbook
