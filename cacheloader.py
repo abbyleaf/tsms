@@ -1,6 +1,9 @@
+import json
 import os
 import re
-import json
+from collections import defaultdict
+
+from unidecode import unidecode
 
 f = open("cache.py", "w", encoding="UTF-8")
 
@@ -119,3 +122,22 @@ with open("./media/wilds_piano.txt", "r", encoding="UTF8") as piano_file:
         piano[number] = reference
 
 f.write("piano = " + json.dumps(piano, ensure_ascii=False) + "\n")
+
+d = open("lookup.py", "w", encoding="UTF-8")
+alpha = re.compile("[^a-zA-Z ]")
+titles_decoded = defaultdict(list)
+songs_decoded = {}
+for song_number, song_title in titles.items():
+    title = unidecode(song_title).strip().upper()
+    title = alpha.sub("", title)
+    if song_number.startswith("TSMS"):
+        titles_decoded[title].insert(0, song_number)
+    else:
+        titles_decoded[title].append(song_number)
+for song_number, song_lyrics in songs.items():
+    lyrics = unidecode(song_lyrics).replace("\n", " ").strip().upper()
+    lyrics = alpha.sub("", lyrics)
+    songs_decoded[song_number] = lyrics
+
+d.write("titles_lookup = " + json.dumps(titles_decoded, ensure_ascii=False) + "\n")
+d.write("songs_lookup = " + json.dumps(songs_decoded, ensure_ascii=False) + "\n")
